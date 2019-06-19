@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -58,4 +59,8 @@ main {
       margin-top: 20vh;
     }
   }
+}
+
+#prog {
+  color: $secondary-color;
 }
