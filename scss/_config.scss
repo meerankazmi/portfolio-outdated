@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #0074d9;
+$primary-color: #1d1b1b;
+$secondary-color: #ec4d37;
 $show-home-image: true;
 $home-image: url("/dist/img/New\ York\ Rain.jpg");
 $portrait-image: url("/dist/img/Meeran_suit.jpg");
@@ -27,6 +27,15 @@ $background-opacity: 0.5;
         background-color: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color)) >40 {
+    @return (#000);
+  } @else {
+    @return (#fff);
   }
 }
 
